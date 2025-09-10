@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifador Galeo-Leroy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tarifador Confección Galeo - Leroy Merlin</h1>
+    <section>
+        <div class="cell">
+            <p>Ancho de cortina (m)</p>
+            <input type="number" id="width" value="0" min="0" onchange="() => calculateBudget()">
+        </div>
+        <div class="cell">
+            <p>Modificador de tamaño</p>
+            <input type="number" id="sizeModifier" value="1" min="1" onchange="() => calculateBudget()">
+        </div>
+        <div class="cell">
+            <p>Dimensión total de tela (m)</p>
+            <p id="fullSize">0</p>
+        </div>
+    </section>
+    <section id="confections">
+        <div class="cell">
+            <p>C1</p>
+            <input type="number" class="manufacturingPrice" placeholder="95" min="0" onchange="() => calculateBudget()">
+        </div>
+        <div class="cell">
+            <p>PVP confección (€)</p>
+            <input type="number" class="confectionPrice" placeholder="13.95" min="0" onchange="() => calculateBudget()">
+        </div>
+        <div class="cell">
+            <p>Coste de confección (€)</p>
+            <p class="totalManufacturingPrice">0</p>
+        </div>
+    </section>
+    <div class="botonera">
+        <button onclick="() => addConfection()">Añadir confección</button>
+    </div>
+    <section>
+        <div class="cell">
+            <p>C1 Total</p>
+            <p>0</p>
+        </div>
+        <div class="cell">
+            <p>Precio de tela (€/m)</p>
+            <input type="number" id="fabricPrice" placeholder="12.4" min="0" onchange="() => calculateBudget()">
+        </div>
+        <div class="cell">
+            <p>Coste de tela (€)</p>
+            <p id="totalFabricPrice">0</p>
+        </div>
+    </section>
+    <section>
+        <div class="cell">
+            <p>Presupuesto final (€)</p>
+            <p id="finalPrice">0</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

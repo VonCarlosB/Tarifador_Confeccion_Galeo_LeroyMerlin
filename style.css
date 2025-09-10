@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: underline;
+    text-decoration-color: #0e3820;
+}
+
+section{
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    border: 1px solid #0e3820;
+}
+
+.cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.cell p:first-child{
+    margin-bottom: 10px;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #0e3820;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
