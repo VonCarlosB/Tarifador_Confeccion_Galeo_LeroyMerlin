@@ -11,11 +11,11 @@
     <section>
         <div class="cell">
             <p>Ancho de cortina (m)</p>
-            <input type="number" id="width" step="0.01" min="0" onchange="calculateBudget()">
+            <input type="number" id="width" step="0.01" min="0" value="0.00" onchange="calculateBudget()">
         </div>
         <div class="cell">
             <p>Modificador de tamaño</p>
-            <input type="number" id="sizeModifier" step="0.1" min="1" onchange="calculateBudget()">
+            <input type="number" id="sizeModifier" step="0.1" min="1" value="1" onchange="calculateBudget()">
         </div>
         <div class="cell">
             <p>Dimensión total de tela</p>
@@ -25,11 +25,11 @@
     <section id="confections">
         <div class="cell">
             <p>C1</p>
-            <input type="number" class="manufacturingPrice" placeholder="95" min="0" onchange="calculateBudget()">
+            <input type="number" class="manufacturingPrice" value="000" min="0" onchange="calculateBudget()">
         </div>
         <div class="cell">
             <p>PVP confección (€)</p>
-            <input type="number" class="confectionPrice" placeholder="13.95" min="0" onchange="calculateBudget()">
+            <input type="number" class="confectionPrice" value="0.00" min="0" onchange="calculateBudget()">
         </div>
         <div class="cell">
             <p>Coste de confección</p>
@@ -46,7 +46,7 @@
         </div>
         <div class="cell">
             <p>Precio de tela (€/m)</p>
-            <input type="number" id="fabricPrice" placeholder="12.4" min="0" onchange="calculateBudget()">
+            <input type="number" id="fabricPrice" value="0.00" min="0" onchange="calculateBudget()">
         </div>
         <div class="cell">
             <p>Coste de tela</p>
