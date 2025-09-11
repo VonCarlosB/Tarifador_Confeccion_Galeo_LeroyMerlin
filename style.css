@@ -34,6 +34,19 @@ section{
     margin-bottom: 10px;
 }
 
+#confections{
+    flex-direction: column;
+    display: none;
+}
+
+.confection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .botonera{
     display: flex;
     flex-direction: row;

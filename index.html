@@ -18,31 +18,19 @@
             <input type="number" id="sizeModifier" step="0.1" min="1" value="1" onchange="calculateBudget()">
         </div>
         <div class="cell">
-            <p>Dimensión total de tela</p>
-            <p id="fullSize">0 m</p>
+            <p>Tamaño orilla</p>
+            <input type="number" id="extraFabric" step="0.1" min="0" value="0" onchange="calculateBudget()">
         </div>
     </section>
     <section id="confections">
-        <div class="cell">
-            <p>C1</p>
-            <input type="number" class="manufacturingPrice" value="000" min="0" onchange="calculateBudget()">
-        </div>
-        <div class="cell">
-            <p>PVP confección (€)</p>
-            <input type="number" class="confectionPrice" value="0.00" min="0" onchange="calculateBudget()">
-        </div>
-        <div class="cell">
-            <p>Coste de confección</p>
-            <p class="totalManufacturingPrice">0 €</p>
-        </div>
     </section>
     <div class="botonera">
         <button onclick="addConfection()">Añadir confección</button>
     </div>
     <section>
         <div class="cell">
-            <p>C1 Total</p>
-            <p id="totalC1">0</p>
+            <p>Dimensión total de tela</p>
+            <p id="fullSize">0 m</p>
         </div>
         <div class="cell">
             <p>Precio de tela (€/m)</p>
@@ -54,6 +42,14 @@
         </div>
     </section>
     <section>
+        <div class="cell">
+            <p>C1 Total</p>
+            <p id="totalC1">0</p>
+        </div>
+        <div class="cell">
+            <p>Coste total de confecciones</p>
+            <p id="totalConfectionsCost">0 €</p>
+        </div>
         <div class="cell">
             <p>Presupuesto final</p>
             <p id="finalPrice">0 €</p>
