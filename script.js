@@ -28,15 +28,15 @@ function calculateFabricSize(){
     let a = Number(ancho.value)
     let sm = Number(sizeMod.value)
     let ef = Number(extraFabric.value)
-    let ans = Math.floor((a*sm+ef)*100)/100
-    return ans
+    let ans = (a*sm+ef).toFixed(2)
+    return Number(ans)
 }
 
 function calculateFabricPrice(){
     let ts = calculateFabricSize()
     let fp = Number(fabricPrice.value)
-    let ans = Math.floor((ts*fp)*100)/100
-    return ans
+    let ans = (ts*fp).toFixed(2)
+    return Number(ans)
 }
 
 function calculateC1(){
@@ -51,16 +51,16 @@ function calculateConfection(){
     for (let i = 0; i < totalConfection.length; i++) {
         let tc = totalConfection[i]
         let pvp = Number(pvpConfection[i].value)
-        let ans = Math.floor((pvp*ts)*100)/100
+        let ans = Number((pvp*ts).toFixed(2))
         tc.innerText = `${ans} €`
         totalAllConfections += ans
     }
-    totalConfectionsCost.innerText = `${Math.floor(totalAllConfections*100)/100} €`
+    totalConfectionsCost.innerText = `${totalAllConfections} €`
 }
 
 function calculateFinalPrice(){
     let fPrice = calculateFabricPrice()
-    let ans = Math.floor((fPrice+totalAllConfections)*100)/100
+    let ans = Number(fPrice+totalAllConfections).toFixed(2)
     return ans
 }
 
